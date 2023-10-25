@@ -1,36 +1,60 @@
+/* Mengimpor font Orbitron dari Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
-*{
-margin:0;    
-padding:0;
-box-sizing:border-box;
-}     
-
-body{
-background:#00D4F9;  
-background:#131418;
-font-family: 'Orbitron', sans-serif;
+/* Mengatur elemen dasar untuk tidak memiliki margin, padding, dan menggunakan model box-sizing yang benar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-padding:20px;  
-width:360px;
-background:#052443;
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
-border-radius:7px;
+/* Mengatur tampilan latar belakang dan jenis font untuk elemen <body> */
+body {
+    background: #eaeaea;
+    /* Warna latar belakang */
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+    /* Jenis font dengan cadangan */
 }
 
-.container .date{
-text-align:center;
-color:white;
-font-size:18px;
+/* Mengatur tampilan kontainer utama */
+.container {
+    padding: 20px;
+    /* Ruang dalam dari kotak */
+    width: 360px;
+    /* Lebar kotak */
+    background: #f5d544;
+    /* Warna latar belakang kotak */
+    position: absolute;
+    /* Posisi absolut untuk pemusatkan */
+    top: 50%;
+    /* Posisi vertikal di tengah */
+    left: 50%;
+    /* Posisi horizontal di tengah */
+    transform: translate(-50%, -50%);
+    /* Pemusatkan menggunakan transformasi */
+    border-radius: 7px;
+    /* Sudut bulatan pada kotak */
 }
 
-.container .time{
-text-align:center; 
-color:#00D4F9;
-font-size:35px;
-margin-top:10px;
+/* Mengatur tampilan teks dengan kelas "date" */
+.container .date {
+    text-align: center;
+    /* Posisi teks ke tengah */
+    color: #0d690d;
+    /* Warna teks */
+    font-size: 22px;
+    /* Ukuran font */
+    font-weight: 750;
+    /* Font tebal */
+}
+
+/* Mengatur tampilan teks dengan kelas "time" */
+.container .time {
+    text-align: center;
+    /* Posisi teks ke tengah */
+    color: #f900ae;
+    /* Warna teks */
+    font-size: 35px;
+    /* Ukuran font yang lebih besar */
+    margin-top: 10px;
+    /* Ruang atas dari teks "time" */
 }
